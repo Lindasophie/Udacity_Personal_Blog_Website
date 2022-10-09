@@ -1,0 +1,261 @@
+:root {
+    --primary-color: #195953;
+    --secondary-color:#f99500;
+    --light-color: #f3f3f3;
+    --dark-color: #333;
+    --medium-color:#888888;
+    --max-width: 1100px;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Montserrat', sans-serif;
+    line-height: 1.5;
+    background: var(--light-color);
+    letter-spacing: 0.05rem;
+}
+
+a{
+    color:#333;
+    text-decoration: none;
+}
+
+ul {
+    list-style:none;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem;
+    overflow: hidden;
+}
+
+h1{
+    font-size: 16pt;
+    text-align: center;
+}
+
+
+/* Main Navbar */
+#main-nav {
+    background:var(--primary-color);
+    opacity:0.95;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+#main-nav .container {
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    padding: 1rem;
+    align-items: center;
+}
+
+#main-nav .logo {
+    color: white;
+    display:flex;
+    justify-self:center;
+    width:190pt;
+}
+
+#main-nav .logo #logo-text {
+    padding: 0.5rem;
+    align-self:center;
+}
+
+#main-nav .logo #logo-text li {
+    padding: 0.25rem;
+    justify-self: center;
+    display: flex;
+    color: white
+}
+   
+#main-nav ul {
+    justify-self: center;
+    display: flex;
+}
+
+#main-nav ul li a {
+    padding: 0.75rem;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#main-nav .social {
+    justify-self: center;
+}
+
+#main-nav .social i {
+    color:white;
+    margin-right: .5rem
+}
+
+#main-nav ul li a:hover {
+    background: var(--medium-color)
+}
+
+
+/* Post*/
+#post .container {
+    display: grid;
+    grid-template-columns: 5fr 1fr 2fr;
+    letter-spacing: 0;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+#post .card{
+    margin-left:50px;
+    margin-right:50px;
+}
+#post p{
+    margin-bottom: 0.5rem;
+}
+#post .date {
+    font-size: 32;
+}
+
+#post img {
+    padding-bottom: 1rem;
+    padding-top: 3rem;
+}
+#post h1{
+    text-align:left;
+    letter-spacing: 0.05rem;
+    font-size: 16pt;
+    font-weight: 500;
+}
+#post h3{
+    color: #888888;
+    font-weight:lighter;
+    font-size:12pt;
+    padding-top:1rem;
+}
+
+#post h2{
+    font-weight: 600;
+    font-size:18px;
+    letter-spacing: 0.05rem;
+    padding-bottom:1rem;
+    padding-top:1rem;
+
+}
+#post button{
+    background-color:var(--secondary-color);
+    color:white;
+    border-radius:10%;
+    border:none;
+    padding:5pt;
+    
+}
+#list-places {
+    list-style-type:decimal;
+    text-indent: 5px;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+#list-places li{
+    margin-bottom:0.5rem;
+}
+#list-places a{
+    text-decoration:underline;
+}
+
+#post #introduction-container img {
+    border-radius: 50%;
+}
+#post #introduction-container p {
+    display:flex;
+    justify-items:center;
+    text-align:center;
+    padding-left:1rem;
+    padding-right:1rem;
+}
+#post #introduction-container h1 {
+    text-align:center;
+    padding-left:5rem;
+    padding-right:5rem;
+    text-decoration:underline;
+}
+
+/* Footer */
+#main-footer {
+    background: #5a5a5a;
+    color: #fff;
+    opacity:0.95;
+    margin-top:2rem;
+  }
+
+#main-footer .footer-container {
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-gap:0.5rem;
+    padding: 1.5rem;
+    align-items: center;
+    justify-items: center;;
+  }
+ 
+#main-footer .logo {
+    color: white;
+    display:flex;
+    width:190pt;
+}
+
+#main-footer .logo #logo-text {
+    padding: 0.5rem;
+    align-self:center;
+}
+
+#main-footer .logo #logo-text li {
+    padding: 0.25rem;
+    color: white
+}
+   
+#main-footer ul {
+    justify-self: center;
+    display: flex;
+}
+
+#main-footer ul li a {
+    padding: 0.3rem;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing:none;
+}
+
+#main-footer .social {
+    justify-self: center;
+}
+
+#main-footer .social i {
+    color:white;
+    margin-right: .5rem
+}
+
+#main-footer .footer-container > *:last-child {
+    background: var(--secondary-color);
+    grid-column: 1 / span 3;
+    padding: 0.3rem;
+    margin: 0.05rem;
+    font-size: 0.75rem;
+  }
+  
+  
+  
+
+
+
