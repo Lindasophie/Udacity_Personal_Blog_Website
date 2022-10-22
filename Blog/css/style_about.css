@@ -1,3 +1,6 @@
+@import "main_navbar.css";
+@import "footer.css";
+
 :root {
     --primary-color: #195953;
     --secondary-color:#f99500;
@@ -43,67 +46,6 @@ img {
 h1{
     font-size: 16pt;
     text-align: center;
-}
-
-
-/* Main Navbar */
-#main-nav {
-    background:var(--primary-color);
-    opacity:0.95;
-    position: sticky;
-    top: 0;
-    z-index: 2;
-}
-
-#main-nav .container {
-    display: grid;
-    grid-template-columns: 2fr 3fr 2fr;
-    padding: 1rem;
-    align-items: center;
-}
-
-#main-nav .logo {
-    color: white;
-    display:flex;
-    justify-self:center;
-    width:190pt;
-}
-
-#main-nav .logo #logo-text {
-    padding: 0.5rem;
-    align-self:center;
-}
-
-#main-nav .logo #logo-text li {
-    padding: 0.25rem;
-    justify-self: center;
-    display: flex;
-    color: white
-}
-   
-#main-nav ul {
-    justify-self: center;
-    display: flex;
-}
-
-#main-nav ul li a {
-    padding: 0.75rem;
-    color: white;
-    font-size: 12px;
-    font-weight: bold;
-}
-
-#main-nav .social {
-    justify-self: center;
-}
-
-#main-nav .social i {
-    color:white;
-    margin-right: .5rem
-}
-
-#main-nav ul li a:hover {
-    background: var(--medium-color)
 }
 
 
@@ -165,69 +107,6 @@ h1{
     padding-top: 3rem;
 }
 
-
-/* Footer */
-#main-footer {
-    background: #5a5a5a;
-    color: #fff;
-    opacity:0.95;
-    margin-top:2rem;
-  }
-
-#main-footer .footer-container {
-    display: grid;
-    grid-template-columns: 2fr 3fr 2fr;
-    grid-gap:0.5rem;
-    padding: 1.5rem;
-    align-items: center;
-    justify-items: center;;
-  }
- 
-#main-footer .logo {
-    color: white;
-    display:flex;
-    width:190pt;
-}
-
-#main-footer .logo #logo-text {
-    padding: 0.5rem;
-    align-self:center;
-}
-
-#main-footer .logo #logo-text li {
-    padding: 0.25rem;
-    color: white
-}
-   
-#main-footer ul {
-    justify-self: center;
-    display: flex;
-}
-
-#main-footer ul li a {
-    padding: 0.3rem;
-    color: white;
-    font-size: 12px;
-    font-weight: bold;
-    letter-spacing:none;
-}
-
-#main-footer .social {
-    justify-self: center;
-}
-
-#main-footer .social i {
-    color:white;
-    margin-right: .5rem
-}
-
-#main-footer .footer-container > *:last-child {
-    background: var(--secondary-color);
-    grid-column: 1 / span 3;
-    padding: 0.3rem;
-    margin: 0.05rem;
-    font-size: 0.75rem;
-  }
   
   
   
